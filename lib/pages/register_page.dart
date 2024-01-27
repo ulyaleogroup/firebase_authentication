@@ -98,8 +98,6 @@ class _RegisterPageState extends State<RegisterPage> {
                   // Put some space so it'll look better
                   SizedBox(height: screenSize.height * 0.1),
 
-           
-
                   SizedBox(height: screenSize.height * 0.025),
 
                   // Build "Or With" section
@@ -108,8 +106,6 @@ class _RegisterPageState extends State<RegisterPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        
-
                         // Build SignUp text
                         buildLoginSection(),
                       ],
@@ -152,7 +148,7 @@ class _RegisterPageState extends State<RegisterPage> {
       child: ElevatedButton(
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(
-            Colors.blue[600],
+            Color(0xff33394e),
           ),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(

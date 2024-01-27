@@ -1,5 +1,5 @@
 import 'package:firebase_authentication/auth.dart';
-import 'package:firebase_authentication/pages/Cat.dart';
+import 'package:firebase_authentication/pages/home_page.dart';
 import 'package:firebase_authentication/pages/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: Auth.currentUser == null ? const LoginPage() : CatPage(),
+      home: Auth.currentUser == null ? const LoginPage() : HomePage(),
     );
   }
 }

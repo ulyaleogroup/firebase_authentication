@@ -4,7 +4,8 @@ import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_authentication/auth.dart';
-import 'package:firebase_authentication/pages/Cat.dart';
+import 'package:firebase_authentication/pages/cat_page.dart';
+import 'package:firebase_authentication/pages/home_page.dart';
 import 'package:firebase_authentication/pages/register_page.dart';
 import 'package:firebase_authentication/widgets/password_text_field.dart';
 import 'package:firebase_authentication/widgets/text_text_field.dart';
@@ -81,7 +82,6 @@ class _LoginPageState extends State<LoginPage> {
                   // Put some space so it'll look better
                   SizedBox(height: screenSize.height * 0.15),
 
-
                   SizedBox(height: screenSize.height * 0.025),
 
                   // Build other login types
@@ -90,7 +90,6 @@ class _LoginPageState extends State<LoginPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-
                         // Build SingUp
                         buildSingUpSection(),
                       ],
@@ -128,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
       child: FilledButton(
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(
-            Colors.blue[600],
+            Color(0xff33394e),
           ),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
@@ -272,7 +271,7 @@ class _LoginPageState extends State<LoginPage> {
   void openMainPage() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => CatPage()),
+      MaterialPageRoute(builder: (context) => HomePage()),
     );
   }
 
