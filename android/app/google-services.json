@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808424343220",
+    "project_id": "bismillahbisa1234",
+    "storage_bucket": "bismillahbisa1234.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808424343220:android:446379401a089cca88f9e1",
+        "android_client_info": {
+          "package_name": "com.example.firebase_authentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCESE3GRNGdHh6yV2gcTPT6Mk1DDmWNNV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
